@@ -1,0 +1,48 @@
+.chat-bubble{
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  img, i{
+    cursor: pointer;
+  }
+  .dropdown-menu {
+    z-index: 9999;
+    left: auto;
+    right: 0;
+    min-width: 25rem;
+    .nav{
+      p{
+        cursor: pointer;
+      }
+      .active {
+        border-bottom: 1px solid #EC1D6F;
+      }
+    }
+    .brandslist{
+      height: 400px;
+      overflow-y: scroll;
+      overflow-x: hidden;
+    }
+    input {
+      color: #8B8A8A;
+      border-radius: 40px !important;
+      ::placeholder{
+        color: #8B8A8A;
+      }
+    }
+  }
+  .chat-message {
+    .date {
+      color: #8B8A8A;
+      font-size: 12px;
+      margin-bottom: 0;
+    }
+    .chat-message-card {
+      background: #F1F1F1;
+      border: 1px solid #F1F1F1;
+      color: #1D1D1D;
+      padding: 10px;
+      font-size: 14px;
+    }
+  }
+}

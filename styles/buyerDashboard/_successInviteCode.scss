@@ -1,0 +1,75 @@
+.success-invite-code-container {
+  height: 100vh;
+  position: relative;
+
+  .center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    .img-logo {
+      width: 100px;
+      height: 90px;
+      margin-bottom: 2.5rem;
+    }
+
+    .img-check {
+      width: 71px;
+      height: 71px;
+      margin-bottom: 2rem;
+    }
+
+    .text-heading {
+      font-size: 25px;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      width: 40rem;
+      line-height: 1.25;
+    }
+
+    .text-subheading {
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      width: 30rem;
+      line-height: 1.25;
+    }
+
+    .close-link-button {
+      font-size: 18px;
+      width: 82%;
+      height: 50px;
+      background: #000;
+      outline: none;
+      border-radius: 25px;
+      letter-spacing: 0.05em;
+      border: 1px solid rgb(214, 214, 214);
+      color: white !important;
+      transition: all 100ms ease-in;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center;
+
+      &:hover {
+        background: #ffffff;
+        color: #000000 !important;
+        font-weight: bold;
+        border: 2px solid #000000;
+      }
+    }
+
+    .link {
+      font-size: 20px;
+      font-weight: 500;
+      a {
+        transition: none !important;
+        text-decoration: underline;
+        color: #000000;
+        cursor: pointer;
+      }
+    }
+  }
+}

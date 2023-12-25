@@ -1,0 +1,15 @@
+body {
+  .breadcrumb {
+    padding: 0;
+    background: transparent;
+    .breadcrumb-item {
+      text-transform: capitalize;
+      &.active {
+        color: $text-color;
+      }
+      a {
+        color: $light-color;
+      }
+    }
+  }
+}

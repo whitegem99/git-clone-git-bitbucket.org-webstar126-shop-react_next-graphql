@@ -1,0 +1,86 @@
+.header {
+  background: #fff;
+  height: 60px;
+  padding: 0 1.5rem;
+  display: flex;
+  border-bottom: 1px solid $border-color;
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  top: 0;
+  left: 0;
+  @include breakpoints(sm) {
+    height: 70px;
+  }
+  .navbar {
+    padding: 0;
+    background: transparent;
+    width: 100%;
+    .navbar-nav {
+      display: flex;
+      flex-direction: row;
+      li {
+        a {
+          padding: 0 0.75rem;
+          display: flex;
+          align-items: center;
+          height: 100%;
+          font-size: 21px;
+          @include breakpoints(sm) {
+            font-size: 14px;
+          }
+        }
+        a,
+        .dropdown-item {
+          color: $nav-color;
+          text-transform: capitalize;
+        }
+        .dropdown-menu {
+          position: absolute;
+        }
+        .dropdown-item {
+          a {
+            font-size: 14px;
+          }
+          &:hover {
+            color: $secondary-color;
+          }
+        }
+        &:last-child {
+          a {
+            padding-right: 0;
+          }
+        }
+      }
+      .user {
+        .user-name {
+          @include breakpoints(xxs) {
+            display: none;
+          }
+        }
+      }
+    }
+    .navbar-brand {
+      padding: 0;
+      color: $nav-color;
+      font-size: 21px;
+      @include breakpoints(sm) {
+        font-size: 14px;
+      }
+      img {
+        @include breakpoints(xs) {
+          width: 100px;
+        }
+      }
+    }
+    .small_avatar {
+      width: 30px;
+      height: 30px;
+      overflow: hidden;
+      border-radius: 100%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

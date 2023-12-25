@@ -1,0 +1,34 @@
+.pagination{
+    border: 1px solid;
+    border-color: $border-color;
+    padding: 0.25rem;
+    .page-item{
+        &.active{
+            a{
+                border-color: $border-color;
+                color: $primary-color;
+            }
+        }
+        &:first-child{
+            a{
+                border-left: 0;
+            }
+        }
+        &:last-child{
+            a{
+                border-right: 0;
+            }
+        }
+        .page-link{
+            border-top: 0;
+            border-bottom: 0;
+            border-color: $border-color;
+            background: #fff !important;
+            color: $light-color;
+            padding: 0.5rem 1rem;
+            &:focus{
+                box-shadow: none;
+            }
+        }
+    }
+}

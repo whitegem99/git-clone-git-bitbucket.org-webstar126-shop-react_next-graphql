@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70">
+  <g id="chat_bubble_" data-name="chat_bubble " transform="translate(-1807 -1700)">
+    <g id="Rectangle_2154" data-name="Rectangle 2154" transform="translate(1807 1700)" fill="#fff" stroke="#707070" stroke-width="1" opacity="0">
+      <rect width="70" height="70" stroke="none"/>
+      <rect x="0.5" y="0.5" width="69" height="69" fill="none"/>
+    </g>
+    <g id="Group_10118" data-name="Group 10118" transform="translate(7 620)">
+      <circle id="Ellipse_13" data-name="Ellipse 13" cx="30" cy="30" r="30" transform="translate(1805 1085)"/>
+      <path id="Subtraction_2" data-name="Subtraction 2" d="M.846,0A.832.832,0,0,0,.487.083.852.852,0,0,0,.132.407.906.906,0,0,0,0,.88v17.6A3.458,3.458,0,0,0,3.385,22h15.23A3.458,3.458,0,0,0,22,18.48V7.92A3.458,3.458,0,0,0,18.615,4.4H6.229L1.388.2A.827.827,0,0,0,.846,0ZM5.923,13.2a.881.881,0,0,1,0-1.76h6.769a.881.881,0,0,1,0,1.76Zm0,3.52a.881.881,0,0,1,0-1.76H16.077a.881.881,0,0,1,0,1.76Z" transform="translate(1846 1127) rotate(180)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

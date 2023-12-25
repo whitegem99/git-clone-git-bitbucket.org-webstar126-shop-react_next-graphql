@@ -1,0 +1,268 @@
+.pq-form {
+  text-align: left;
+  input,
+  textarea {
+    border-bottom: 1px solid;
+    border-color: $borderPrimary-color;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-radius: 0;
+    height: 35px;
+    font-size: 14px;
+    padding: 0.375rem 0;
+    @include inputPlaceholder() {
+      color: #bbb;
+    }
+    &:focus {
+      outline: none;
+      box-shadow: none;
+      border-color: $primary-color;
+    }
+  }
+  label {
+    margin: 0;
+    color: $primary-color;
+    text-transform: capitalize;
+  }
+  .textarea {
+    min-height: 100px;
+  }
+  .form-group {
+    margin-bottom: 1rem;
+    &.form-group-lg {
+      margin-bottom: 3rem;
+    }
+    span {
+      &.error {
+        font-size: 12px;
+        color: $red-color;
+      }
+    }
+  }
+  .input-group {
+    .input-group-prepend {
+      .input-group-text {
+        padding: 0;
+        background: transparent;
+        border-bottom: 1px solid;
+        border-top: 0;
+        border-right: 0;
+        border-left: 0;
+        border-color: $borderPrimary-color;
+      }
+    }
+  }
+  .btn-input-group {
+    width: 25px;
+    height: 25px;
+    line-height: 0;
+    &.round {
+      @include border-radius(50px);
+    }
+    &.default {
+      background: #d2cbf3;
+      color: $primary-color;
+    }
+  }
+}
+
+input {
+  &.large {
+    height: 50px;
+  }
+}
+
+.pq-checkbox {
+  &.black {
+    input {
+      &:checked {
+        & + label {
+          border-color: $text-color;
+        }
+      }
+    }
+    label {
+      border-color: $text-color;
+    }
+  }
+  input {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    &:checked {
+      & + label {
+        border: 10px solid;
+        border-color: $secondary-color;
+        &::before {
+          content: '\f00c';
+          font-family: 'Font Awesome 5 Free';
+          font-weight: 900;
+          font-size: 12px;
+          position: absolute;
+          @include transition(all 0.3s ease);
+          @include transform(scale(1));
+        }
+      }
+    }
+  }
+  label {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    justify-content: center;
+    border: 2px solid;
+    border-color: $secondary-color;
+    margin: 0;
+    @include border-radius(3px);
+    @include transition(all 0.3s ease);
+    &::before {
+      content: '\f00c';
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900;
+      @include transition(all 0.3s ease);
+      @include transform(scale(0));
+      color: #fff;
+    }
+  }
+}
+
+.pq-select_picker {
+  max-width: 250px;
+  min-width: 220px;
+  @include breakpoints(xs) {
+    min-width: auto;
+    max-width: 200px;
+  }
+  @include breakpoints(xxs) {
+    min-width: auto;
+    max-width: 150px;
+  }
+  .rrs {
+    .rrs__button,
+    .rrs__label {
+      @include border-radius(50px);
+    }
+    .rrs__button {
+      box-shadow: none;
+      line-height: 40px;
+      border: 1px solid;
+      border-color: $primary-color;
+      @include breakpoints(xs) {
+        line-height: 30px;
+      }
+      .rrs__label {
+        border: 0;
+        text-transform: capitalize;
+        color: $primary-color;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1rem;
+        font-family: $primary-font;
+        text-align: left;
+        @include breakpoints(xs) {
+          font-size: 12px;
+          padding: 0 0.5rem;
+        }
+        span {
+          width: 90%;
+          text-overflow: ellipsis;
+          overflow: hidden;
+        }
+      }
+    }
+    .rrs__options {
+      border: 1px;
+      border-color: $border-color;
+      box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
+      text-align: left;
+      color: $text-color;
+      li {
+        text-transform: capitalize;
+        font-family: $primary-font;
+      }
+      .rrs__option {
+        &.rrs__option--next-selection {
+          background: $primary-dim-color;
+          color: $primary-color;
+          &:focus {
+            outline: none;
+          }
+        }
+        &:hover:not(.rrs__option--next-selection) {
+          background: $dim-color;
+          color: $text-color;
+        }
+      }
+    }
+  }
+  &.default {
+    min-width: auto;
+    max-width: 100%;
+    .rrs {
+      .rrs__button,
+      .rrs__label {
+        @include border-radius(0px);
+      }
+      .rrs__button {
+        border: none;
+        border-bottom: 1px solid;
+        border-color: $borderPrimary-color;
+        line-height: 35px;
+      }
+      .rrs__label {
+        padding: 0;
+      }
+    }
+  }
+}
+
+.pq-autoSuggest {
+  .react-autosuggest__container {
+    .react-autosuggest__suggestions-list {
+      border: 1px;
+      border-color: $border-color;
+      box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
+      text-align: left;
+      color: $text-color;
+      li {
+        cursor: pointer;
+        padding: 0.75rem 1rem;
+        &:hover {
+          background: $dim-color;
+          color: $text-color;
+        }
+      }
+    }
+  }
+}
+
+.pq-file_uploader {
+  .filepond--wrapper {
+    .filepond--root {
+      .filepond--panel-root {
+        background: $secondary-dim-color;
+        @include border-radius(5px);
+      }
+      .filepond--drop-label {
+        background: $secondary-dim-color;
+        border: 2px dashed;
+        border-color: $secondary-color;
+        @include border-radius(5px);
+        label {
+          color: #444;
+          font-family: $bold-font;
+          font-size: 14px;
+          .filepond--label-action {
+            color: $primary-color;
+            text-decoration: none;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}

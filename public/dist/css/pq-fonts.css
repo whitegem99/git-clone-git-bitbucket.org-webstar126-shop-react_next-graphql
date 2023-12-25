@@ -1,0 +1,74 @@
+@font-face {
+  font-family: "font-pingponq";
+  src: url("/dist/fonts/font-pingponq.eot?4bckwk");
+  src: url("/dist/fonts/font-pingponq.eot?4bckwk#iefix")
+      format("embedded-opentype"),
+    url("/dist/fonts/font-pingponq.ttf?4bckwk") format("truetype"),
+    url("/dist/fonts/font-pingponq.woff?4bckwk") format("woff"),
+    url("/dist/fonts/font-pingponq.svg?4bckwk#font-pingponq") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="fpq-"],
+[class*=" fpq-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "font-pingponq" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fpq-apple:before {
+  content: "\e900";
+}
+.fpq-google-play:before {
+  content: "\e901";
+}
+.fpq-campaign:before {
+  content: "\e903";
+}
+.fpq-card:before {
+  content: "\e906";
+}
+.fpq-community:before {
+  content: "\e909";
+}
+.fpq-graph:before {
+  content: "\e90b";
+}
+.fpq-package:before {
+  content: "\e90d";
+}
+.fpq-settings:before {
+  content: "\e90e";
+}
+.fpq-comment:before {
+  content: "\e902";
+}
+.fpq-delete:before {
+  content: "\e904";
+}
+.fpq-facebook:before {
+  content: "\e905";
+}
+.fpq-instagram:before {
+  content: "\e907";
+}
+.fpq-lens:before {
+  content: "\e908";
+}
+.fpq-power:before {
+  content: "\e90a";
+}
+.fpq-twitter:before {
+  content: "\e90c";
+}

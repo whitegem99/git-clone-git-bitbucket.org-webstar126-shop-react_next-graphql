@@ -1,0 +1,91 @@
+@mixin transition($transition...) {
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  -ms-transition: $transition;
+  -o-transition: $transition;
+  transition: $transition;
+}
+
+@mixin animation($animation...) {
+  -webkit-animation: $animation;
+  -moz-animation: $animation;
+  -ms-animation: $animation;
+  -o-animation: $animation;
+  animation: $animation;
+}
+
+@mixin transform($transform...) {
+  -webkit-transform: $transform;
+  -moz-transform: $transform;
+  transform: $transform;
+}
+
+@mixin border-radius($radius...) {
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin keyframes($keyframe...) {
+  @-webkit-keyframes #{$keyframe} {
+    @content;
+  }
+  @-moz-keyframes #{$keyframe} {
+    @content;
+  }
+  @-ms-keyframes #{$keyframe} {
+    @content;
+  }
+  @keyframes #{$keyframe} {
+    @content;
+  }
+}
+
+@mixin absolute-position {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+@mixin fixed-position {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+// ===============================================================================
+// ---------------------------- media queries ------------------------------------
+// ===============================================================================
+
+@mixin breakpoints($screen) {
+  @if $screen == xxl {
+    @media (min-width: 1440px) {
+      @content;
+    }
+  } @else if $screen == xl {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  } @else if $screen == lg {
+    @media (min-width: 992px) {
+      @content;
+    }
+  } @else if $screen == md {
+    @media (min-width: 768px) {
+      @content;
+    }
+  } @else if $screen == sm {
+    @media (min-width: 576px) {
+      @content;
+    }
+  } @else if $screen == xs {
+    @media (max-width: 575px) {
+      @content;
+    }
+  } @else if $screen == xxs {
+    @media (max-width: 360px) {
+      @content;
+    }
+  }
+}

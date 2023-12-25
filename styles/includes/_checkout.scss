@@ -1,0 +1,375 @@
+.checkout {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    letter-spacing: 0.2px;
+    @include breakpoints(xs) {
+      font-size: 1.2rem;
+    }
+  }
+  input {
+    height: 50px;
+    border-radius: 9px;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 5px 14px rgba(42, 42, 42, 0.04);
+    margin-bottom: 1.75em;
+  }
+  textarea {
+    height: 100px;
+    border-radius: 9px;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 5px 14px rgba(42, 42, 42, 0.04);
+    margin-bottom: 1.75em;
+  }
+  ::placeholder {
+    font-weight: normal;
+    font-size: 12px;
+    text-align: left;
+    color: #2a2a2a;
+  }
+
+  button {
+    text-transform: capitalize;
+  }
+
+  .bold {
+    font-weight: bold;
+  }
+
+  .qty-text {
+    position: relative;
+    right: 35px;
+
+    input {
+      width: 40px;
+      margin-bottom: 0;
+      height: 40px;
+      margin-left: 10px;
+      text-align: center;
+    }
+  }
+
+  .black-btn {
+    background-color: black;
+    min-height: 40px;
+    min-width: 100px;
+    display: flex;
+    justify-content: center;
+    text-transform: capitalize;
+    z-index: 1;
+  }
+
+  .font-14 {
+    font-size: 14px;
+  }
+
+  .signup-link {
+    text-decoration: underline;
+    color: black;
+    cursor: pointer;
+  }
+
+  .cart-summary {
+    width: 100%;
+    min-height: 324px;
+    border-radius: 9px;
+    margin-top: 40px;
+    background: #fff;
+    border: 1px solid rgba(184, 210, 226, 0.4);
+    box-shadow: 0px 6px 21px rgba(184, 210, 226, 0.38);
+
+    .card-header {
+      min-height: 40px;
+      border-radius: 9px 9px 0px 0px;
+      background: rgba($color: #b8d2e2, $alpha: 0.2);
+      padding: .5rem 1rem;
+    }
+
+    .card-content {
+      padding: 10px;
+      position: relative;
+      min-height: 270px;
+    }
+
+    button {
+      width: calc(100% - 18px);
+      position: absolute;
+      bottom: 8px;
+    }
+  }
+
+  .checkout-card {
+    width: 100%;
+    //height: 165px;
+    border-radius: 9px;
+    background: #fff;
+    border: 1px solid rgba(184, 210, 226, 0.4);
+    box-shadow: 0px 6px 21px rgba(184, 210, 226, 0.38);
+    //overflow: hidden;
+    margin-bottom: 10px;
+
+    .card-header {
+      min-height: 40px;
+      border-radius: 9px 9px 0px 0px;
+      background: rgba($color: #b8d2e2, $alpha: 0.2);
+      padding: .5rem 1rem;
+    }
+
+    .card-header-pink {
+      padding: .75rem 1.25rem;
+      min-height: 40px;
+      border-radius: 9px 9px 0px 0px;
+      background: rgba($color:  #929CA1, $alpha: 0.2);
+      padding: .5rem 1rem;
+    }
+
+    .sub-heading {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    .card-content {
+      padding: 10px;
+      //overflow: scroll;
+      //height: 120px;
+    }
+  }
+
+  .tile-container {
+    border: unset;
+    border-bottom: 1px solid #e2e2e2;
+    margin-bottom: 0;
+    padding: 10px 5px;
+  }
+
+  .cards-container {
+    overflow-y: scroll;
+  }
+
+  .payment-container {
+    width: 100%;
+    min-height: 48vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .main {
+      min-width: 383px;
+      min-height: 165px;
+      border-radius: 9px;
+      background: #fff;
+      border: 1px solid rgba(184, 210, 226, 0.4);
+      box-shadow: 0px 6px 21px rgba(184, 210, 226, 0.38);
+      margin-bottom: 2em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      button {
+        display: flex;
+        justify-content: center;
+        text-transform: capitalize;
+        min-width: 330px;
+        height: 45px;
+      }
+    }
+  }
+
+  //stepper styles goes here
+
+  .wrapper-progressBar {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .progressBar {
+    font-size: 12px;
+    letter-spacing: 0.2px;
+  }
+
+  .progressBar li {
+    list-style-type: none;
+    float: left;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+    color:#929CA1;
+  }
+
+  .progressBar li:before {
+    content: ' ';
+    line-height: 30px;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #ddd;
+    display: block;
+    text-align: center;
+    margin: 12px auto 5px;
+    background-color: white;
+    z-index: 1;
+  }
+
+  .progressBar li:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color:#929CA1;
+    top: 16px;
+    left: -46.68%;
+    z-index: -1;
+  }
+
+  .progressBar li:first-child:after {
+    content: none;
+  }
+
+  .progressBar li.active {
+    color: #000;
+  }
+
+  .progressBar li.active:before {
+    border-color: #000;
+    background-color: #000;
+  }
+
+  .progressBar .active:after {
+    background-color: #000;
+  }
+
+  .apply-btn {
+    border: 1px solid #2A2A2A;
+    color: #2A2A2A;
+    background: transparent !important;
+    padding: 10px 30px;
+  }
+
+  .payment-card {
+    background: #FFFFFF 0 0 no-repeat padding-box;
+    box-shadow: 0 6px 21px #B8D2E261;
+    border: 1px solid #B8D2E266;
+    padding: 15px;
+    height: 50vh;
+
+    .radio {
+      display: grid;
+      grid-template-columns: min-content auto;
+      grid-gap: 0.5em;
+      font-size: 1rem;
+      color: #EA1962;
+    }
+
+    .radio__label {
+      line-height: 1;
+      transition: 180ms all ease-in-out;
+      opacity: 0.8;
+      color: #2A2A2A;
+    }
+
+    .radio__input {
+      display: flex;
+
+      input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+
+        &:focus + .radio__control {
+          box-shadow: 0 0 0 0.05em #fff, 0 0 0.15em 0.1em currentColor;
+        }
+      }
+    }
+
+    .radio-gradient input:checked + .radio__control {
+      background: radial-gradient(currentcolor 50%, rgba(255, 0, 0, 0) 51%);
+    }
+
+    .radio-before {
+      .radio__control {
+        display: grid;
+        place-items: center;
+      }
+
+      input + .radio__control::before {
+        content: "";
+        width: 0.5em;
+        height: 0.5em;
+        box-shadow: inset 0.5em 0.5em currentColor;
+        border-radius: 50%;
+        transition: 180ms transform ease-in-out;
+        transform: scale(0);
+      }
+
+      input:checked + .radio__control::before {
+        transform: scale(1);
+      }
+    }
+
+    .radio__control {
+      display: block;
+      width: 1em;
+      height: 1em;
+      border-radius: 50%;
+      border: 0.1em solid currentColor;
+      transform: translateY(-0.05em);
+    }
+
+    .credit-card {
+      background: #F5F5F5;
+      padding: 5px 10px;
+      p {
+        font-size: 16px !important;
+      }
+      img {
+        margin: auto;
+        height: 32px;
+      }
+    }
+  }
+  .units{
+    width: 52px;
+    text-align: center;
+    height: 31px;
+  }
+  .btn-checkout{
+    background: #2A2A2A 0% 0% no-repeat padding-box;
+    border-radius: 5px !important;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    border: 0;
+    margin-left: 15px;
+  }
+  .card-header{
+    font-size: 14px;
+    .top-left{
+      width: 80%;
+    }
+    .top-right{
+      width: 20%;
+    }
+  }
+  // .card-header-pink{
+  //   .top-left{
+  //     width: 80%;
+  //   }
+  //   .top-right{
+  //     width: 20%;
+  //   }
+  // }
+  .top-cart-summary{
+    .card-content{
+      background: #FFFFFF 0% 0% no-repeat padding-box;
+      box-shadow: 0px 6px 4px #00000017;
+      font-size: 14px;
+      padding: 15px;
+    }
+  }
+}

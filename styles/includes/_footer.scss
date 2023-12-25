@@ -1,0 +1,27 @@
+.footer {
+  background: #fff;
+  position: relative;
+  padding: 1rem;
+  border-top: 1px solid $border-color;
+  position: relative;
+  margin-top: 100px;
+  &::before {
+    content: url('/assets/images/intersection-rose-new.svg');
+    position: absolute;
+    top: -80px;
+    left: 120px;
+    width: 190px;
+    z-index: -1;
+  }
+}
+ul {
+  &.card-list {
+    li {
+      float: left;
+      padding-right: 5px;
+      img {
+        width: 30px;
+      }
+    }
+  }
+}

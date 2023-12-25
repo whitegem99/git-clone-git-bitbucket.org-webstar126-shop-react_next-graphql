@@ -1,0 +1,60 @@
+body {
+  .btn {
+    font-family: "roboto";
+    border-radius: 4px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    outline: none;
+    position: relative;
+    z-index: 9;
+    &:focus {
+      box-shadow: none;
+    }
+    // &:hover {
+    //   box-shadow: 0 10px 15px -3px rgba(170, 113, 113, 0.2),
+    //     0 3px 10px 0px rgba(0, 0, 0, 0.25);
+    // }
+    @include transition(all 0.3s ease);
+  }
+  .btn-primary {
+    background-color: $primary-color;
+    color: #fff;
+    border-color: $primary-color;
+    &:hover {
+      background-color: $primary-color;
+      color: #fff;
+      border-color: $primary-color;
+    }
+  }
+  .btn-secondary {
+    background-color: $red-color;
+    color: #fff;
+    border-color: $red-color;
+    &:hover {
+      background-color: $red-color;
+      color: #fff;
+      border-color: $red-color;
+    }
+  }
+  .btn-secondary-white {
+    background-color: #fff;
+    color: $secondary-color;
+    border-color: #fff;
+    &:hover {
+      background-color: #fff;
+      color: $secondary-color;
+      border-color: #fff;
+    }
+  }
+  .btn-rounded {
+    border-radius: 50px;
+  }
+  .btn-lg {
+    padding: 0.5rem 2rem;
+  }
+  .btn-sm {
+    padding: 0.2rem 1.2rem;
+  }
+}

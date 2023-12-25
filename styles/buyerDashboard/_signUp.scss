@@ -1,0 +1,263 @@
+.signup {
+  height: 100vh;
+  position: relative;
+  .center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    img {
+      width: 100px;
+      height: 90px;
+    }
+    .title-sign-up {
+      font-size: 35px;
+      font-weight: 600;
+    }
+    .form-row {
+      input {
+        width: 336px;
+        height: 50px;
+        box-shadow: 0 4px 8px #00000040;
+        border-radius: 5px;
+        &:focus {
+          border-color: #b8d2e2;
+        }
+      }
+    }
+
+    .signUp {
+      font-size: 20px;
+      font-weight: 500;
+      a {
+        transition: none !important;
+        text-decoration: underline;
+        color: #929ca1;
+        cursor: pointer;
+        &:hover {
+          color: #000;
+        }
+      }
+    }
+
+    .auth__nav-link {
+      font-size: 20px;
+      font-weight: 500;
+      a {
+        transition: none !important;
+        text-decoration: underline;
+        color: #929ca1;
+        cursor: pointer;
+        &:hover {
+          color: #000;
+        }
+      }
+    }
+
+    button {
+      font-size: 18px;
+      width: 100%;
+      height: 50px;
+      background: transparent;
+      outline: none;
+      border-radius: 25px;
+      border: 1px solid rgb(214, 214, 214);
+      color: rgb(139, 138, 138);
+      transition: all 100ms ease-in;
+
+      &:hover {
+        background: #000;
+        color: white;
+      }
+    }
+
+    .signup-button {
+      font-size: 18px;
+      width: 100%;
+      height: 50px;
+      background: transparent;
+      outline: none;
+      border-radius: 25px;
+      border: 1px solid rgb(214, 214, 214);
+      color: rgb(139, 138, 138);
+      transition: all 100ms ease-in;
+
+      &:hover {
+        background: #000;
+        color: white;
+      }
+
+      &:focus {
+        background: #000;
+        color: white;
+      }
+
+      &:active {
+        background: #000 !important;
+        color: white !important;
+      }
+    }
+
+    .signup-button-active {
+      font-size: 18px;
+      width: 100%;
+      height: 50px;
+      background: transparent;
+      outline: none;
+      border-radius: 25px;
+      border: 1px solid rgb(214, 214, 214);
+      background: #000;
+      color: white;
+      transition: all 100ms ease-in;
+    }
+
+    .form-check {
+      input {
+        display: none; /* Hide the default checkbox */
+      }
+
+      span {
+        height: 15px;
+        width: 15px;
+        border: 1px solid rgb(139, 138, 138);
+        background: white;
+        display: inline-block;
+        position: relative;
+        margin-right: 10px;
+      }
+
+      [type='checkbox']:checked ~ span {
+        background-color: #000;
+        border-color: #000;
+      }
+
+      [type='checkbox']:checked + span:before {
+        content: '\2714';
+        color: white;
+        position: absolute;
+        font-size: 20px;
+        top: -5px;
+        left: 0;
+      }
+    }
+  }
+
+  .uploader-reseller-certificate-container {
+    .uploadcare--widget:not(.uploadcare--widget_option_clearable).uploadcare--widget_status_error
+      .uploadcare--widget__button_type_remove,
+    .uploadcare--widget:not(.uploadcare--widget_option_clearable).uploadcare--widget_status_loaded
+      .uploadcare--widget__button_type_remove,
+    .uploadcare--widget_option_clearable.uploadcare--widget_status_error
+      .uploadcare--widget__button_type_open,
+    .uploadcare--widget_status_error .uploadcare--widget__button_type_cancel,
+    .uploadcare--widget_status_error .uploadcare--widget__progress,
+    .uploadcare--widget_status_loaded .uploadcare--widget__button_type_cancel,
+    .uploadcare--widget_status_loaded .uploadcare--widget__button_type_open,
+    .uploadcare--widget_status_loaded .uploadcare--widget__progress,
+    .uploadcare--widget_status_ready .uploadcare--widget__button_type_cancel,
+    .uploadcare--widget_status_ready .uploadcare--widget__button_type_remove,
+    .uploadcare--widget_status_ready .uploadcare--widget__progress,
+    .uploadcare--widget_status_ready .uploadcare--widget__text,
+    .uploadcare--widget_status_started .uploadcare--widget__button_type_open,
+    .uploadcare--widget_status_started .uploadcare--widget__button_type_remove {
+      display: none;
+    }
+
+    .uploadcare--widget {
+      display: flex !important;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      width: 336px;
+      height: 50px;
+      border: 2px dashed $border-color !important;
+      border-radius: 5px !important;
+    }
+
+    .uploadcare--widget__button-pin-image {
+      height: 0.9rem !important;
+      width: 0.9rem !important;
+      margin-right: 15px;
+    }
+
+    .uploadcare--widget__button_type_open {
+      display: flex;
+      height: inherit !important;
+      align-items: center;
+      justify-content: center;
+      border: none !important;
+      border-radius: 5px !important;
+
+      &:hover {
+        background-color: #f3f1f1 !important;
+        color: #8b8a8a !important;
+      }
+
+      .uploadcare--widget__button-span {
+        font-size: 1rem !important;
+        color: #495057 !important;
+      }
+    }
+
+    .uploadcare--widget__button_type_cancel {
+      width: 0 !important;
+      margin: 0 4rem 0 0 !important;
+      padding: 0 !important;
+      border: none !important;
+      border-radius: 0px !important;
+
+      &:hover {
+        background-color: inherit !important;
+        color: inherit !important;
+      }
+
+      .uploadcare--widget__button-span {
+        font-size: 1rem !important;
+        color: #495057 !important;
+
+        &:hover {
+          color: #a2a8af !important;
+          transition: color 100ms ease-in !important;
+        }
+      }
+    }
+
+    .uploadcare--widget__button_type_remove {
+      width: 0 !important;
+      margin: 0 4rem 0 0 !important;
+      padding: 0 !important;
+      border: none !important;
+      border-radius: 0px !important;
+
+      &:hover {
+        background-color: inherit !important;
+        color: inherit !important;
+      }
+
+      .uploadcare--widget__button-span {
+        font-size: 1rem !important;
+        color: #495057 !important;
+
+        &:hover {
+          color: #a2a8af !important;
+          transition: color 100ms ease-in !important;
+        }
+      }
+    }
+
+    .uploadcare--widget__text {
+      margin-right: 1rem !important;
+      font-size: 1rem !important;
+    }
+
+    .uploadcare--widget__file-name {
+      font-size: 1rem !important;
+    }
+
+    .uploadcare--widget__file-size {
+      display: none !important;
+    }
+  }
+}

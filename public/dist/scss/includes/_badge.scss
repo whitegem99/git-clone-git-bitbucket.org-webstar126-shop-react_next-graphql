@@ -1,0 +1,26 @@
+.badge {
+  background: $secondary-color;
+  display: inline-flex;
+  padding: 0.3rem;
+  color: #fff;
+  font-weight: normal;
+  font-size: 75%;
+  text-transform: capitalize;
+  @include border-radius(0.25rem);
+  &.badge-rounded {
+    @include border-radius(10rem);
+  }
+  &.badge-md {
+    padding: 0.5rem 1.2rem;
+    font-size: 85%;
+  }
+  &.badge-success {
+    background-color: #229e31;
+  }
+  &.badge-primary {
+    background-color: #1c71c7;
+  }
+  &.badge-danger {
+    background-color: #de3c3c;
+  }
+}

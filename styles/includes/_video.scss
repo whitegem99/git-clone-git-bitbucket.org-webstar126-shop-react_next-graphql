@@ -1,0 +1,20 @@
+.player_wrapper {
+  position: relative;
+  padding-top: 56.25%; /* Player ratio: 100 / (1280 / 720) */
+}
+.video_player {
+  position: absolute;
+  top: 0;
+  left: 0;
+  .play_icon {
+    color: #fff;
+    background: $red-color;
+    width: 50px;
+    height: 50px;
+    @include border-radius(50px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+  }
+}

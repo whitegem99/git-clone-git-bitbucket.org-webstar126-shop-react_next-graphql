@@ -1,0 +1,82 @@
+.message {
+  .buyer-sidebar{
+    background: none;
+  }
+  .card-title {
+    color: #ED1D72;
+  }
+  .nav {
+    li{
+      cursor: pointer;
+      font-size: 18px;
+    }
+    .active {
+      border-bottom: 1px solid #000;
+    }
+  }
+  .brandslist {
+    height: 65vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    .row, .conversation {
+      cursor: pointer;
+      padding: 10px;
+      margin-bottom: 10px;
+      &:hover {
+        background: #E4E4E4;
+      }
+    }
+    .selected-brand {
+      background: #E4E4E4;
+    }
+    .card-img {
+      background-size: contain !important;
+      background-position: center center !important;
+      //background-repeat: no-repeat !important;
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      background-repeat: no-repeat;
+      border:1px solid #E4E4E4;
+    }
+    .primary-text {
+      font-size: 14px;
+    }
+    .secondary-text {
+      font-size: 14px;
+    }
+  }
+  .tab-ab {
+    label {
+      color: #6B6B6B;
+      font-size: 12px;
+    }
+    select {
+      font-size: 12px;
+      color: #000000;
+      font-weight: bold;
+      border: 0;
+      outline: none;
+      &:focus{
+        outline: none;
+        box-shadow: none;
+      }
+    }
+  }
+  .input-group {
+    .input-group-text {
+      background: transparent;
+      border-right: none;
+      border-color: #FFFFFF !important;
+    }
+    input{
+      border-left: none;
+      border-color: #FFFFFF !important;
+      &:focus{
+        box-shadow: none;
+        outline: none;
+        border-color: #FFFFFF !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,206 @@
+// .box {
+//   background: #fff;
+//   padding: 2rem;
+//   border: 1px solid $border-color;
+//   @include border-radius(6px);
+//   .thumbnail-container {
+//     width: 100px;
+//     height: 100px;
+//     @include border-radius(6px);
+//     overflow: hidden;
+//     img {
+//       width: 100%;
+//     }
+//   }
+// }
+// ul {
+//   &.social-links {
+//     padding: 0;
+//     list-style-type: none;
+//     li {
+//       a {
+//         padding: 0 0.75rem;
+//         color: $light-color;
+//       }
+//       &:first-child {
+//         a {
+//           padding-left: 0;
+//         }
+//       }
+//     }
+//   }
+// }
+// ul {
+//   &.pagination {
+//     .page-item {
+//       &.active {
+//         .page-link {
+//           background: transparent;
+//           color: $secondary-color;
+//         }
+//       }
+//       .page-link {
+//         color: $light-color;
+//         border-color: $border-color;
+//       }
+//     }
+//   }
+// }
+// .text-ellipsis {
+//   white-space: nowrap;
+//   overflow: hidden;
+//   text-overflow: ellipsis;
+// }
+
+// .loader {
+//   min-height: 100vh;
+// }
+body {
+  &.sidebar-open {
+    .sidebar {
+      left: 0;
+    }
+  }
+}
+.app-outer {
+  width: 100%;
+  overflow: hidden;
+  .main {
+    margin-top: 60px;
+    margin-left: 0;
+    width: 100%;
+    background-image: url("/dist/img/intersection-rose-new.svg");
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-position: 11% 95%;
+    @include transition(all 0.3s ease);
+    @include breakpoints(xs) {
+      background-position: 11% 66%;
+    }
+    @include breakpoints(sm) {
+      background-position: 11% 87%;
+      margin-top: 70px;
+    }
+    @include breakpoints(md) {
+      width: calc(100% - 100px);
+      margin-left: 100px;
+      background-position: 11% 81%;
+    }
+    @include breakpoints(lg) {
+      background-position: 11% 89%;
+    }
+    @include breakpoints(xl) {
+      background-position: 11% 94%;
+    }
+    .page-wrapper {
+      padding: 1rem;
+    }
+    .app-body {
+      background-image: url("/dist/img/intersection-orange-new.svg");
+      background-repeat: no-repeat;
+      background-size: 160px;
+      background-position: 107% 25%;
+      padding: 1.5rem;
+      min-height: calc(100vh - 320px);
+      @include breakpoints(xs) {
+        background-position: 125% 20%;
+      }
+      @include breakpoints(sm) {
+        background-position: 112% 20%;
+      }
+      @include breakpoints(md) {
+        background-position: 110% 30%;
+      }
+      @include breakpoints(lg) {
+        background-position: 107% 25%;
+      }
+    }
+  }
+}
+.title-bar {
+  margin: 1rem 0;
+  .title {
+    font-size: 24px;
+    color: $secondary-color;
+    text-transform: capitalize;
+  }
+}
+.widget {
+  background: #fff;
+  padding: 1rem;
+  border: 1px solid $borderPrimary-color;
+  @include border-radius(5px);
+  &.widget-lg {
+    padding: 3rem;
+  }
+}
+.auth-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+  @include breakpoints(sm) {
+    padding: 10rem 0;
+  }
+  .auth-panel {
+    width: 100%;
+    @include breakpoints(lg) {
+      width: 85%;
+    }
+    .left-panel,
+    .right-panel {
+      border: 1px solid;
+      padding: 3rem;
+    }
+    .left-panel {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      background-color: $secondary-color;
+      border-color: $secondary-color;
+      color: #fff;
+      @include border-radius(5px 5px 0 0);
+      @include breakpoints(md) {
+        width: 45%;
+        @include border-radius(5px 0 0 5px);
+      }
+      ul {
+        &.features-list {
+          li {
+            padding: 1rem 0;
+          }
+        }
+      }
+      .graphics {
+        position: absolute;
+        left: -60px;
+        top: 0px;
+        z-index: 1;
+        img {
+          width: 120px;
+        }
+      }
+    }
+    .right-panel {
+      position: relative;
+      width: 100%;
+      background: #fff;
+      border-color: $border-color;
+      @include border-radius(0 0 5px 5px);
+      @include breakpoints(md) {
+        width: 55%;
+        @include border-radius(0 5px 5px 0);
+      }
+      .graphics {
+        position: absolute;
+        right: 90px;
+        bottom: -140px;
+        z-index: 1;
+        img {
+          width: 150px;
+        }
+      }
+    }
+  }
+}

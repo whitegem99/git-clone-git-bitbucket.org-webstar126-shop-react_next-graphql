@@ -1,0 +1,21 @@
+table{
+    &.table{
+        thead,
+        tbody{
+            text-transform: capitalize;
+        }
+        th,td {
+            vertical-align: middle;
+        }
+    }
+    &.center{
+        th,td {
+            text-align: center;
+        }
+    }
+    &.primary{
+        td{
+            color: $primary-color;
+        }
+    }
+}
